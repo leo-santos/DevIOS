@@ -1,0 +1,58 @@
+// Playground - noun: a place where people can play
+
+import Foundation
+
+
+
+var segundos = 60
+
+var ano = 365 * 24 * segundos * segundos
+
+var pixel = 40
+
+var pixel2 = 60
+
+var numeropixel = pixel * pixel2
+
+var soma = 20
+
+var diferenca = 10
+
+
+
+var moeda = arc4random()
+
+var resultado = moeda % 2
+
+
+if (resultado==1){
+    
+    println("Cara")
+}
+else{
+    println("Coroa")
+}
+
+var numero = 105
+
+if (numero % 3==0 && numero % 5==0 && numero % 7==0){
+            println("Numero é divisivel pelos 3")
+        }
+else{
+    println(" Nao é divisivel|")
+}
+
+var n = 20
+
+var i = 0
+
+for i in 1...n {
+   println(i*i)
+}
+
+
+
+var a = 20
+
+var b = 30
+
