@@ -1,0 +1,70 @@
+
+
+
+println(min(1, 2)) // 1
+println(min(10, 5)) // 5
+
+func raizes (a: Double, b: Double, c: Double) -> (Double,Double)? {
+  var delta = (b*b)-(4*a*c)
+    if delta<0{
+    return nil
+    }
+    var raiz2=(-b-sqrt(delta))/(2*a)
+    var raiz1=(-b+sqrt(delta))/(2*a)
+    println(raiz1)
+    println(raiz2)
+    return (raiz1, raiz2)
+}
+
+var a = raizes(1,5,3)
+
+println(a!.0)
+
+func soma(numbers:  Int...) -> Int{
+    var soma = 0
+    for number in numbers {
+        soma += number
+    }
+    return soma
+}
+
+soma(1, 25,30,50)
+
+var queue: [Int] = []
+
+func push(elemento: Int, inout queue: [Int]) -> Bool{
+    var num = queue.count
+ 
+    queue.append(elemento)
+    var atual = queue.count
+    if(atual==num){
+        return false
+    }
+    else{
+        return true
+    }
+
+}
+func pop(inout queue: [Int]) -> Int?{
+    var num = queue.count
+    
+    if num==0{
+        return nil
+    }
+ 
+    var pilhafim = queue.removeLast()
+
+    var atual = queue.count
+     return pilhafim
+    
+}
+// adicionando o primeiro elemento
+push(1, &queue) // queue = [1]
+// adicionando o segundo elemento
+push(2, &queue) // queue = [1, 2]
+pop(&queue)
+pop(&queue)
+pop(&queue)
+
+
+
