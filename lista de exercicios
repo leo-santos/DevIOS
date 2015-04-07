@@ -1,0 +1,32 @@
+
+class Circle{
+    var radius: Double
+    
+    var color: String
+    init(radius: Double, color: String){
+        self.color=color
+        self.radius=radius
+        
+    }
+    init(radius: Double){
+        self.color="red"
+        self.radius=radius
+        
+    }
+    var area: Double{
+        
+    get{
+        
+        return M_PI*(radius*radius)
+    }
+    }
+}
+
+var c = Circle(radius:2.0,color:"blue")
+
+println(c.radius)
+println(c.color)
+var b=Circle(radius: 3.8)
+println(b.radius)
+println(b.color)
+println(b.area)
