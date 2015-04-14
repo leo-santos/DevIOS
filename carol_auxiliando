@@ -1,0 +1,37 @@
+
+class Ball{
+
+var x: Float
+
+var y: Float
+    
+var radius: Int
+var xDelta: Float
+var yDelta: Float
+    init(x: Float, y:Float,radius:Int, speed:Int, direction:Int){
+        var direction2 = Float(direction) * 180/3.14
+        var d :Float = Float(speed) * 5
+        xDelta = d * cos(direction2)
+        yDelta = d * sin(direction2)
+        self.x = x
+        self.y = y
+        self.radius = radius
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    }
+
+}
+
+
